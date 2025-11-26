@@ -56,6 +56,7 @@ func getStats(c echo.Context) error {
 	stats := Statistics{
 		Workshops: workshops,
 		Version:   "2.0",
+		
 	}
 
 	return c.JSON(http.StatusOK, stats)
