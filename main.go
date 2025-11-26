@@ -76,7 +76,7 @@ func listStudents(c echo.Context) error {
 func registerStudent(c echo.Context) error {
 	var student Student
 	if err := c.Bind(&student); err != nil {
-		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid data"})
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "Invalid  data"})
 	}
 
 	if student.Name == "" {
